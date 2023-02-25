@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <script>
+    var firebaseConfig = {
+// TODO: Add your our config here
+      apiKey: "AIzaSyAa1G7qBEyXxSvE7dUZ2ZYUv1aE7dGe-RE",
+      authDomain: "infoder-49968.firebaseapp.com",
+      projectId: "infoder-49968",
+      storageBucket: "infoder-49968.appspot.com",
+      messagingSenderId: "95232425124",
+      appId: "1:95232425124:web:9866678d60431754d87a31",
+      measurementId: "G-GRY5CZHYLN"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+      </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">  
+        <form class="contact" action="" method="post" id="add-details">
+            <h3>Form Sample</h3>
+            
+            <div class="col50 colleft">
+                <div class="col50 colleft">
+                    <div class="wd50">
+                        <label name="">Name</label>
+                        <input placeholder="Name" type="text" name="name" required autofocus>
+                    </div>
+                    <div class="wd50">
+                        <label name="">Gender</label>
+                        <input placeholder="Gender" name="gender" type="text" required>
+                    </div>
+                </div>
+                <div class="col50 colright">
+                    <div class="wd50">
+                        <label name="">Phone number</label>
+                        <input placeholder="Phone number" name="number" type="tel" required>
+                    </div>
+                    <div class="wd50">
+                        <label name="">Blood Group</label>
+                        <input placeholder="Blood Group" name="bloodgroup" type="text" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col50 colright">
+                <div class="col50 colleft">
+                    <div class="wd50">
+                        <label name="">Nationality</label>
+                        <input placeholder="Nationality" name="nationality" type="text" required>
+                    </div>
+                    <div class="wd50 ">
+                        <label name="">Aadhar Number </label>
+                        <input placeholder="Aadhar Number" name="aadhar"type="text" required>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="wd100"><hr></div>
+            
+            
+            <div class="wd50">
+                <button name="submit" type="submit" id="" data-submit="...Sending">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src = "form.js" type= module></script>
+
+
+
+
+</body>
+</html>
