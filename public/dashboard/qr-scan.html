@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width,
+						initial-scale=1.0">
+	<link rel="stylesheet"
+		href="style.css">
+	<title>QR-Reader</title>
+</head>
+
+<body>
+	<div class="container">
+        <div class="Scanner" id="reader">
+
+        </div>
+	</div>
+	<script src="qr-scan.min.js"></script>
+    <script>function onScanSuccess(decodedText, decodedResult) {
+	// Handle on success condition with the decoded text or result.
+		console.log(`Scan result: ${decodedText}`, decodedResult);
+		
+	}
+	
+	function onScanError(errorMessage) {
+		// handle on error condition, with error message
+	}
+	
+	var html5QrcodeScanner = new Html5QrcodeScanner(
+		"reader", { fps: 10, qrbox: 250 });
+	html5QrcodeScanner.render(onScanSuccess, onScanError);</script>
+
+	
+</body>
+
+</html>
