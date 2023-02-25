@@ -6,11 +6,11 @@ function handleSubmit(event) {
 	let qrimg = document.getElementById("qrimg");
 	qrimg.src = qrsrc;
 }
-function onScanSuccess(decodedText, decodedResult) {
-    // Handle on success condition with the decoded text or result.
-    console.log(`Scan result: ${decodedText}`, decodedResult);
-}
+// function onScanSuccess(decodedText, decodedResult) {
+//     // Handle on success condition with the decoded text or result.
+//     console.log(`Scan result: ${decodedText}`, decodedResult);
+// }
 
-var html5QrcodeScanner = new Html5QrcodeScanner(
-	"reader", { fps: 10, qrbox: 250 });
-html5QrcodeScanner.render(onScanSuccess);
+// var html5QrcodeScanner = new Html5QrcodeScanner(
+// 	"reader", { fps: 10, qrbox: 250 });
+// html5QrcodeScanner.render(onScanSuccess);
