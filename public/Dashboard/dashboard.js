@@ -1,6 +1,7 @@
 // Import the Firebase SDK
 import { initializeApp, firestore } from 'firebase';
 const form = document.querySelector(zx)
+const submit = document.getElementById
 
 // Initialize Firebase with your project's configuration
 const firebaseConfig = {
@@ -30,3 +31,4 @@ db.collection('users').add({
 .catch(error => {
   console.error('Error saving data:', error);
 });
+
